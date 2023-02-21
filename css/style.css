@@ -1,0 +1,194 @@
+.page {
+  height: 100vh;
+  display: flex;
+  background-image: url(../image/events-heavenly-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.page nav {
+  padding: 20px;
+  width: 0%;
+  background-color: #414658;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  z-index: 999;
+  opacity: 0;
+  transition: 0.9s;
+}
+.page .home {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.9s;
+}
+.page nav.widthNav {
+  width: 20%;
+  opacity: 1;
+}
+.page .home.widthHome {
+  width: 78%;
+  left: 21%;
+}
+.page .layer-home {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(214, 46, 51, 0.6);
+  color: white;
+}
+.page nav #closeTap {
+  position: absolute;
+  font-size: 2rem;
+  top: 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  right: 20px;
+}
+nav .linksNav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 72px;
+}
+nav .linksNav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+nav .linksNav a:hover,
+nav #closeTap:hover {
+  color: rgb(142, 7, 7);
+}
+.page #openTap {
+  position: absolute;
+  left: 1%;
+  gap: 12px;
+  align-items: center;
+}
+.cap-home h1 {
+  font-size: 60px;
+}
+.singer-page {
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-sec h3 {
+  padding: 10px;
+  margin: 0;
+  background-color: rgba(214, 46, 51, 0.6);
+  cursor: pointer;
+  color: white;
+}
+.slider-sec div {
+  padding: 10px;
+  background-color: #ccc;
+  display: none;
+}
+.countDown {
+  background-image: url(../image/invitation-2508607__340.jpg);
+  height: 45vh;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.countDown .layerCount {
+  position: absolute;
+  padding: 3rem 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(214, 46, 51, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+.counter {
+  display: flex;
+  width: 100%;
+  align-items: start;
+  justify-content: space-around;
+}
+.counter div {
+  border: 1px solid white;
+  height: 90%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 23%;
+}
+.layerCount .Expired {
+  display: none;
+}
+.icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 40px;
+}
+.icons .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #414658;
+  padding: 10px;
+  color: #414658;
+  cursor: pointer;
+}
+.icons .icon i {
+  font-size: 1.5rem;
+}
+.icons .icon:hover {
+  color: #fff;
+  background-color: #d62e33;
+  border: 1px solid #d62e33;
+}
+.form input,
+.form textarea {
+  margin-bottom: 10px;
+  padding: 15px;
+}
+.form {
+  padding: 30px 0;
+}
+@media all and (max-width: 485px) {
+  .slider-sec {
+    width: 100% !important;
+  }
+  .counter div {
+    height: 100;
+  }
+  .page nav.widthNav {
+    width: 33%;
+  }
+  .cap-home h1 {
+    font-size: 50px;
+  }
+  .page .home.widthHome {
+    width: 75%;
+    left: 33%;
+  }
+  .layerCount .container {
+    display: flex;
+    align-items: center;
+  }
+  .information {
+    text-align: center;
+  }
+  .cap-home {
+    margin-bottom: 200px;
+  }
+}
+@media all and (max-width: 700px) {
+  .cap-home {
+    margin-bottom: 200px;
+  }
+}
